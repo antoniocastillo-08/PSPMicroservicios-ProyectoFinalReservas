@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Hoteles y Vuelos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Reservas de Hoteles y Vuelos</h1>
+    </header>
+
+    <!-- Sección de Autenticación -->
+    <section class="auth-section">
+        <h2>Autenticación</h2>
+        <div class="form-group">
+            <input type="text" id="username" placeholder="Usuario" class="form-input">
+            <input type="password" id="password" placeholder="Contraseña" class="form-input">
+            <button onclick="autenticar()" class="btn">Iniciar Sesión</button>
+        </div>
+        <div id="auth-result" class="result"></div>
+    </section>
+
+    <!-- Sección de Hoteles -->
+    <section class="hoteles-section">
+        <h2>Hoteles Disponibles</h2>
+        <button onclick="obtenerHoteles()" class="btn">Obtener Hoteles</button>
+        <div id="hoteles-result" class="result"></div>
+    </section>
+
+    <!-- Sección de Vuelos -->
+    <section class="vuelos-section">
+        <h2>Vuelos Disponibles</h2>
+        <button onclick="obtenerVuelos()" class="btn">Obtener Vuelos</button>
+        <div id="vuelos-result" class="result"></div>
+    </section>
+
+<!--   &lt;!&ndash; Sección de Crear Reserva &ndash;&gt;-->
+<!--    <section class="reserva-section">-->
+<!--        <h2>Crear Reserva</h2>-->
+<!--        <div class="form-group">-->
+<!--            <input type="text" id="hotelId" placeholder="ID del Hotel" class="form-input">-->
+<!--            <input type="text" id="vueloId" placeholder="ID del Vuelo" class="form-input">-->
+<!--            <button onclick="crearReserva()" class="btn">Crear Reserva</button>-->
+<!--        </div>-->
+<!--        <div id="reserva-result" class="result"></div>-->
+<!--    </section>-->
+
+    <!-- Sección de Reservas -->
+    <section class="reservas-section">
+        <h2>Mis Reservas</h2>
+        <button onclick="obtenerReservas()" class="btn">Obtener Reservas</button>
+        <div id="reservas-result" class="result"></div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

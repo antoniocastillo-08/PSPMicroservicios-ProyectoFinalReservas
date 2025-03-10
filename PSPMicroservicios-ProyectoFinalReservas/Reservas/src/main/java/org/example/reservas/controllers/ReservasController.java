@@ -1,5 +1,6 @@
 package org.example.reservas.controllers;
 
+import org.example.reservas.client.HotelCliente;
 import org.example.reservas.models.Reserva;
 import org.example.reservas.services.ReservasService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ public class ReservasController {
 
     @Autowired
     private ReservasService reservasService;
+    private HotelCliente hotelCliente;
 
     // GET: Obtener todas las reservas
     @GetMapping

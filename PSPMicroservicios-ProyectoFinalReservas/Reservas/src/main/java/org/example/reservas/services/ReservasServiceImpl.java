@@ -77,8 +77,6 @@ public class ReservasServiceImpl implements ReservasService {
         // Actualizar los campos de la reserva existente
         reservaExistente.setNombreUsuario(reserva.getNombreUsuario());
         reservaExistente.setDniUsuario(reserva.getDniUsuario());
-        reservaExistente.setIdHotel(reserva.getIdHotel());
-        reservaExistente.setIdVuelo(reserva.getIdVuelo());
 
         // Guardar la reserva actualizada
         reservasRepository.save(reservaExistente);
